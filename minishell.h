@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wbelfatm <wbelfatm@student.42.fr>          +#+  +:+       +#+        */
+/*   By: muel-bak <muel-bak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:53:34 by wbelfatm          #+#    #+#             */
-/*   Updated: 2024/04/14 12:47:03 by wbelfatm         ###   ########.fr       */
+/*   Updated: 2025/01/10 15:19:52 by muel-bak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -285,7 +285,7 @@ typedef struct s_token
 	struct s_token	*prev;
 }	t_tok;
 
-long	g_here_flag[2];
+extern long	g_here_flag[2];
 
 bool		ft_syntax(const char *line, int *heredoc_value,
 				char **error_to_print);

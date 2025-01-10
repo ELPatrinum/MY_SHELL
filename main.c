@@ -6,7 +6,7 @@
 /*   By: muel-bak <muel-bak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:54:46 by wbelfatm          #+#    #+#             */
-/*   Updated: 2024/04/17 09:42:23 by muel-bak         ###   ########.fr       */
+/*   Updated: 2025/01/10 15:38:05 by muel-bak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ void	read_execute(t_config *config, char **line)
 		|| !execute(config))
 		return ;
 }
+
+long g_here_flag[2] = {0, 0};
 
 int	main(int argc, char *argv[], char *env[])
 {
